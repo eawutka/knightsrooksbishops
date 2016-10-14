@@ -1,0 +1,15 @@
+.chessboard {
+  margin: 0 auto;
+}
+
+div[class^="spare-pieces-"] {
+  padding-left: 0 !important;
+}
+
+.white-1e1d7 {
+  background-color: white 
+}
+
+.black-3c85d {
+  background-color: #dddfdc
+}

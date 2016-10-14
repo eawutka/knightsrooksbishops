@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo {
+  width: 30vw;
+  max-width: 200px;
+  margin: 20px;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    margin: 10px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.game-message {
+  font-size: 20px;
+  margin: 10px;
+}
+
+@media (max-width: 500px) {
+  .game-message {
+    font-size: 15px;
+  }
+}
+
+.score span {
+  font-size: 40px;
+  margin: 5px;
+}
+
+.score .red {
+  color: #964735;
+}
+
+.score .blue {
+  color: #79909e;
+}
+
+.score .yellow {
+  color: #c5a671;
+}
+
+.score .purple {
+  color: #6b5a70;
+}
