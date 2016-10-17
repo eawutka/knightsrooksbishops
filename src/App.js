@@ -82,23 +82,18 @@ class App extends Component {
       })
       var newPlayers = this.state.game.players
       if (this.state.player) {
-        newPlayers[`p${this.state.player}`] = "";
+        newPlayers[`p${this.state.player}`] = ""
         this.updateGameState({players: newPlayers})
       }
       return null
     }
     this.findGame()
   }
-  componentDidUpdate(prevProps, prevState) {
-    if (this.state.game && this.state.game.status === "active" && prevState.game.status !== "active") {
-      this.onGameStart()
-    }
-  }
   findGame() {
     this.state.base.fetch('gameData', {
       context: this,
       then(data){
-        var index = (Object.keys(data).length);
+        var index = (Object.keys(data).length)
         if (data["undefined"]) {
           index--
         }
@@ -213,9 +208,6 @@ class App extends Component {
       status: "active",
       turn: 1
     })
-  }
-  onGameStart() {
-    
   }
   removePlayer(playerKey) {
     var newPlayers = this.state.game.players
